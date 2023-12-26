@@ -1,3 +1,3 @@
 # Learning Git
 
-Learning Git with the **`fireship.io`** *Git and GitHub Course*.
+Learning Git with the **`firship.io`** *Git and GitHub Course*.
