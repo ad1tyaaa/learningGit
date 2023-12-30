@@ -62,3 +62,17 @@ In git, we can set different usernames and emails, for working on different proj
 Instead of using `--global` flag with the `git comfig` command, which sets the username and email, at a global level, we can also use `--local` flag. If we set the username and email using it, the provided information will only be used in the current project repository.
 
 ***
+
+### `git init`
+
+Command used for creating a **git repository**
+
+```bash
+git init
+```
+
+Executing this command creates a directory called **`.git`** in the project directory. `.git` is hidden by deault, and is responsible of kepping track of all the changes that across the project directory.
+
+To remove git from a project, all we have to do is remove `.git` directory and git is gone.
+
+***
