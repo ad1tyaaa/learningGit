@@ -76,3 +76,19 @@ Executing this command creates a directory called **`.git`** in the project dire
 To remove git from a project, all we have to do is remove `.git` directory and git is gone.
 
 ***
+
+### `git status`
+
+Command to check status of the git repository
+
+```bash
+git status
+```
+
+It lets us inspect the current state of our repository. It tells us which files are tracked or untracked in the git repository. It also tells us the branch we are currently on, and any changes that have been made to the tracked files in the current branch.
+
+**But, what if there are any files that shouldn't be included in ther epo at all ?**
+
+We may have files that store private keys, or build files, that are unnecessary for the repo. To exclude a file or directory from being tracked by git, we use a `.gitignore` file.
+
+**`.gitignore` :** It is a file that we can place in the repo and we put the path of the files, and directories we want git to ignore.
