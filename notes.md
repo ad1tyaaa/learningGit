@@ -92,3 +92,39 @@ It lets us inspect the current state of our repository. It tells us which files 
 We may have files that store private keys, or build files, that are unnecessary for the repo. To exclude a file or directory from being tracked by git, we use a `.gitignore` file.
 
 **`.gitignore` :** It is a file that we can place in the repo and we put the path of the files, and directories we want git to ignore.
+
+***
+
+### Staging Area and `git add`
+
+**Staging Area :** Git repositories are like a collection of snapshots(commits) of the project, with the head pointing to the most recent snapshot. But, before taking a snapshot, we have to add the files to the staging area.
+
+Note : Git is like a photographer in a marriage, who takes pictures of everyone that walks onto the satge. Before, For anyone to have thier picture in the Album, they have to be on the stage and then the picture will be clicked.
+
+Being tracked doesn't automatically add the modified files to the staging area. We can manually choose what to stage, and commit.
+
+Command to add files to staging area
+
+```bash
+git add FILEMANE
+```
+
+To add all modified files to staging area ot once
+
+```bash
+git add .
+```
+
+Command to remove one or more files from staging area
+
+```bash
+git reset FILENAME
+```
+
+Command to reset all files from staging area at once
+
+```bash
+git reset .
+```
+
+***
