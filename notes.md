@@ -15,7 +15,7 @@ Git takes snapshots (*commits*) of the tracked files, and if and when necessary,
 
 **Git -** Tracks changes to our files
 
-**Repo -** Tracks the diffs (changes) across the codebase.
+**Repo -** Tracks the *diffs* (changes) across the codebase.
 
 **Commit -** Snapshot of the tracked files.
 
@@ -29,7 +29,7 @@ Git takes snapshots (*commits*) of the tracked files, and if and when necessary,
 
 ### Git Installation
 
-We check the version of git installed on our system usng the following command
+We check the version of git installed on our system using the following command
 
 ```bash
 git --version
@@ -40,7 +40,7 @@ If this command prints a version that is 2 or grater, we're good to go. If not, 
 In order to collaborate, we may need to modify git's configuration. The following command is used to list the configuration
 
 ```bash
-git config --lsit
+git config --list
 ```
 
 git requires us to set our username and email for allowing collaboration. If our name and email aren't already set, we use the following commands.
@@ -53,13 +53,13 @@ git config --global user.name = "User Name"
 
 Command to set email
 
-```bsh
+```bash
 git config --global user.email = "username@email.com"
 ```
 
 In git, we can set different usernames and emails, for working on different projects.
 
-Instead of using `--global` flag with the `git comfig` command, which sets the username and email, at a global level, we can also use `--local` flag. If we set the username and email using it, the provided information will only be used in the current project repository.
+Instead of using `--global` flag with the `git config` command, which sets the username and email, at a global level, we can also use `--local` flag. If we set the username and email using it, the provided information will only be used in the current project repository.
 
 ***
 
@@ -71,7 +71,7 @@ Command used for creating a **git repository**
 git init
 ```
 
-Executing this command creates a directory called **`.git`** in the project directory. `.git` is hidden by deault, and is responsible of kepping track of all the changes that across the project directory.
+Executing this command creates a directory called **`.git`** in the project directory. `.git` is hidden by deault, and is responsible of kepping track of all the changes across the project directory.
 
 To remove git from a project, all we have to do is remove `.git` directory and git is gone.
 
@@ -87,7 +87,7 @@ git status
 
 It lets us inspect the current state of our repository. It tells us which files are tracked or untracked in the git repository. It also tells us the branch we are currently on, and any changes that have been made to the tracked files in the current branch.
 
-**But, what if there are any files that shouldn't be included in ther epo at all ?**
+**But, what if there are any files that shouldn't be included in ther repo at all ?**
 
 We may have files that store private keys, or build files, that are unnecessary for the repo. To exclude a file or directory from being tracked by git, we use a `.gitignore` file.
 
@@ -106,7 +106,7 @@ Being tracked doesn't automatically add the modified files to the staging area. 
 Command to add files to staging area
 
 ```bash
-git add FILEMANE
+git add FILENAME
 ```
 
 To add all modified files to staging area ot once
