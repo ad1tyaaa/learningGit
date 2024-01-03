@@ -128,3 +128,37 @@ git reset .
 ```
 
 ***
+
+### `git commit`
+
+`commit` captures a snapshot of the project's currently staged changes. Commited snapshots are like saved-states or checkpoints of a game, and if and when necessary we can go back in time to any previous commit.
+
+Command to commit staged files into the repo
+
+```bash
+git commit -m "made a commit"
+```
+
+The `-m` flag adds a message to the commit. The message makes it easier to keep track of the hanges made in the commit.
+
+git generates a **unique-id** that identifies every commit in the repo.
+
+Often times, staging the changes and then making a commit is seen as a tedious process. There is a shortcut to stage and commit the chenges to the branch in one command. We use the `-a` or `-am` flag with `commit` command for this.
+
+```bash
+git commit -am "made a commit"
+```
+
+OR
+
+```bash
+git commit -a -m "made a commit"
+```
+
+We can also check the information about the last commit using `log` command.
+
+```bash
+git log
+```
+
+***
