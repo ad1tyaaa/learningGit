@@ -7,7 +7,7 @@
 Git was invented by Linus Tolvrads in 2005.
 
 Git is a Version Control System. It keeps track of changes that happen across a set of files.
-It  does this by creating a git-repository for our project, a hidden directory by the name of **`.git`** where it tracks the changes to the files.
+It  does this by creating a **git-repository** for our project, a hidden directory by the name of **`.git`** where it tracks the changes to the files.
 
 Git takes snapshots (*commits*) of the tracked files, and if and when necessary, we can then travel back in time to any previous version of our files.
 
@@ -101,7 +101,7 @@ We may have files that store private keys, or build files, that are unnecessary 
 
 Note : Git is like a photographer in a marriage, who takes pictures of everyone that walks onto the satge. Before, For anyone to have thier picture in the Album, they have to be on the stage and then the picture will be clicked.
 
-Being tracked doesn't automatically add the modified files to the staging area. We can manually choose what to stage, and commit.
+Being tracked doesn't automatically add the modified files to the staging area. We can manually choose what to stage, and commit. `add` and `reset` commands are used to add and remove files from staging area.
 
 Command to add files to staging area
 
@@ -139,11 +139,11 @@ Command to commit staged files into the repo
 git commit -m "made a commit"
 ```
 
-The `-m` flag adds a message to the commit. The message makes it easier to keep track of the hanges made in the commit.
+The `-m` flag adds a message to the commit. The message makes it easier to keep track of the changes made in the commit.
 
 git generates a **unique-id** that identifies every commit in the repo.
 
-Often times, staging the changes and then making a commit is seen as a tedious process. There is a shortcut to stage and commit the chenges to the branch in one command. We use the `-a` or `-am` flag with `commit` command for this.
+Often times, staging the changes and then making a commit is seen as a tedious process. But, there is a shortcut to stage and commit the changes to the branch all in one command. We use the `-a` or `-am` flag with `commit` command for this.
 
 ```bash
 git commit -am "made a commit"
@@ -155,7 +155,7 @@ OR
 git commit -a -m "made a commit"
 ```
 
-We can also check the information about the last commit using `log` command.
+We can also check the information about the last few commits using `log` command.
 
 ```bash
 git log
