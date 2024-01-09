@@ -164,3 +164,38 @@ git log
 ***
 
 ## REMOTE
+
+### `git remote`
+
+Git by itself is a very powerful tool. But, over the last decade it has also emerged as the most popular way to collaborate on software projects, because of webistes like [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/), etc. which are development platforms that use git. GitHub is the most popular one.
+
+We can connect local git repository to a `remote` repo on github.
+
+To do this, we create a repository on GitHub first. After this, we get a link to our remote repository.
+
+Command to connect our repo in local machine to a remote repository on GitHub
+
+```bash
+git remote add NAME LINK
+```
+
+`NAME` is the name we want to give to the remote repo. Typically it is `origin`.
+`LINK` is the link to our remote repository.
+
+`git remote` can also be used to see the lsit of all the remote repositories our local repository is connected to.
+
+```bash
+git remote
+```
+
+We can use `-v` flag to get the link (url) of the remote repository.
+
+```bash
+git remote -v
+```
+
+We can also get additional information about the remote repository, including branches, etc. using this command
+
+```bash
+git remote show origin
+```
