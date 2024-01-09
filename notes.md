@@ -199,3 +199,34 @@ We can also get additional information about the remote repository, including br
 ```bash
 git remote show origin
 ```
+
+### `git push` and 'How to use GitHub?'
+
+When we make a commit locally, it's not automatically uploaded / synced (pushed) to remote repo. **To sync our local changes with remote repo** we use `git push`.
+
+The command has 2 arguments, 
+
+`REPO-NAME` : Name of theremote repository.
+`BRANCH-NAME` : Branch we want to push to.
+
+```bash
+git push origin master -U
+```
+
+When we execute this command for the first time, we can use the `-U` flag. This sets `origin` to `remote upstream` in gitconfig-file. 
+
+Basically, it sets origin as the default value. And, now, from the next time we only have to execute,
+
+```bash
+git push
+```
+
+And, git will automatically take care of the rest.
+
+**Now, what do I do on GitHub, after it has all my local files ?**
+
+GitHub has many different ways in which it helps us browse and manage our code. 
+
+- We can go back any old commits of the repo from the `commits` page.
+- We can see the diffs (changes between commits).
+- We can also edit code online, and create a commit on the website itself too.
